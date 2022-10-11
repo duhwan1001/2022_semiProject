@@ -1,0 +1,146 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+header {
+	background: #D4F4FA;
+	padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+main {
+	background: #EAEAEA;
+    height: 766px;
+	padding: 20px;
+}
+
+main img {
+    border: 1px solid black;
+    position: absolute; 
+
+    width: 650px; /* 200 */
+    height: 761px; /* 300 */
+
+    margin-left: 150px;
+}
+
+/* 내가 추가한 곳 */
+
+.mapSizeUp {
+    animation-name: mapSizeUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.mapSizeDown {
+    animation-name: mapSizeDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes mapSizeUp {
+    0% {width: 200px; height: 300px; margin-left: 50px}
+    100% {width: 650px; height: 761px; margin-left: 150px}
+    
+}
+
+@keyframes mapSizeDown {
+    0% {width: 650px; height: 761px; margin-left: 150px}
+    100% {width: 200px; height: 300px; margin-left: 50px}
+
+}
+
+#mainSection {
+    width: 700px;
+    height: 761px;
+
+    position: absolute;
+    
+    margin-left: 275px;
+    background-color: orangered;
+}
+
+.mainUp {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.mainDown {
+    animation-name: mainSectionDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mainSectionUp {
+    0% {width: -50%; height: -50%;}
+    100% {width: 650px; height: 761px; margin-left: 150px}
+    
+}
+
+@keyframes mainSectionDown {
+    0% {width: -50%; height: -50%;}
+    100% {width: 200px; height: 300px;}
+
+}
+
+/* ----- */
+
+
+main aside {
+	border: 1px solid #333;
+
+    width: 250px;
+    height: 400px;
+
+    margin-right: -120px;
+    float: right;
+}
+.result {
+    position: absolute;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    background: rgb(241, 138, 2);
+    right: 22%;
+    top: 32%;
+    transform: translate(0, -50%);
+}
+.result2{
+        position: absolute;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        background: rgb(241, 138, 2);
+        height: 300px;
+        right: 22%;
+        top: 73%;
+        transform: translate(0, -50%);
+}
+footer {
+	background: #C7C6FF;
+	padding: 20px;
+}
+
+footer h4 {
+    text-align: center;
+}
