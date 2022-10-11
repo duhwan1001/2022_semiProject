@@ -8,7 +8,7 @@ body {
 }
 
 header, main, footer {
-	width: 1100px;
+	width: 1300px;
 	margin: 0 auto;
 }
 
@@ -32,10 +32,10 @@ main {
 main img {
     border: 1px solid black;
 
-    width: 650px;
-    height: 761px;
+    width: 650px; /* 200 */
+    height: 761px; /* 300 */
 
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 main aside {
