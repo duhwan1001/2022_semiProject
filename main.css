@@ -29,6 +29,7 @@ main {
 	padding: 20px;
 }
 
+
 main img {
     border: 1px solid black;
 
@@ -36,6 +37,8 @@ main img {
     height: 761px;
 
     margin-left: 50px;
+
+
 }
 
 main aside {
@@ -56,3 +59,4 @@ footer {
 footer h4 {
     text-align: center;
 }
+
