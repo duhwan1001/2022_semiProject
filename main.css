@@ -31,12 +31,80 @@ main {
 
 main img {
     border: 1px solid black;
+    position: absolute; 
 
     width: 650px; /* 200 */
     height: 761px; /* 300 */
 
     margin-left: 150px;
 }
+
+/* 내가 추가한 곳 */
+
+.mapSizeUp {
+    animation-name: mapSizeUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.mapSizeDown {
+    animation-name: mapSizeDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes mapSizeUp {
+    0% {width: 200px; height: 300px; margin-left: 50px}
+    100% {width: 650px; height: 761px; margin-left: 150px}
+    
+}
+
+@keyframes mapSizeDown {
+    0% {width: 650px; height: 761px; margin-left: 150px}
+    100% {width: 200px; height: 300px; margin-left: 50px}
+
+}
+
+#mainSection {
+    width: 700px;
+    height: 761px;
+
+    position: absolute;
+    
+    margin-left: 275px;
+    background-color: red;
+}
+
+.mainUp {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.mainDown {
+    animation-name: mainSectionDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mainSectionUp {
+    0% {width: -50%; height: -50%;}
+    100% {width: 650px; height: 761px; margin-left: 150px}
+    
+}
+
+@keyframes mainSectionDown {
+    0% {width: -50%; height: -50%;}
+    100% {width: 200px; height: 300px;}
+
+}
+
+/* ----- */
+
 
 main aside {
 	border: 1px solid #333;
@@ -47,6 +115,8 @@ main aside {
     margin-right: 50px;
     float: right;
 }
+
+
 
 footer {
 	background: #C7C6FF;
