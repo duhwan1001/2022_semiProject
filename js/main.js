@@ -74,4 +74,28 @@ $(document).ready(function(){
     }
 
     showSlides();
+    
+    /* D-day 계산기 */
+    document.getElementsByTagName("button")[0].onclick = testDate01;
+    
+    function testDate01(){
+        
+        let today = new Date();
+
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let date = today.getDate();
+        
+        var curentday = year + '-' + month + '-' + date;
+
+        var seldate = document.getElementById("seldate").value;
+
+        var nowDate = new Date(curentday);
+        var afterDate = new Date(seldate);
+
+    
+        var resultVal = (afterDate.getTime() - nowDate.getTime())/(1000 * 60 * 60 * 24);
+        document.getElementById("result").value = resultVal
+    }
+    
 })
