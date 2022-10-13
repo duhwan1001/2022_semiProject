@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -19,7 +21,12 @@
         <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="badge bg-dark text-white position-absolute" style="cursor: pointer; top: 0.5rem; right: 0.5rem">즐겨찾기</div>
+                <div id="bookMark" class="badge bg-dark text-white position-absolute" style="cursor: pointer; top: 0.5rem; right: 0.5rem">즐겨찾기</div>
+                <form>
+                    <input type="hidden" name="link" value="./citys/seoul.html">
+                    <input type="hidden" name="cityNameKr" value="서울">
+                    <input type="hidden" name="cityNameEn" value="Seoul">
+                </form>
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">서울</h1>
                     <p class="lead fw-normal text-white-50 mb-0">대한민국의 수도이자 최대 도시</p>

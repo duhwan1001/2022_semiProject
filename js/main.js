@@ -2,41 +2,49 @@ $(document).ready(function(){
 
     var flag = 0;
 
+    function openIframe() {
+        flag = 1
+        $("#map").removeClass("mapSizeUp");
+        $("#map").addClass("mapSizeDown");
+
+        $("#mainSection").removeClass("fadeOutPage");
+        $("#mainSection").addClass("fadeInPage");
+
+        $("#cityList").removeClass("fadeOutPage");
+        $("#cityList").addClass("fadeInPage");
+
+        //pinSection Area
+        $("#pinSection1").removeClass("fadeInPage");
+        $("#pinSection1").addClass("fadeOutPage");
+        // --- pinSection end --
+
+        $("#pinSection").css("display", 'none')
+    }
+
+    function closeIframe() {
+        $("#map").removeClass("mapSizeDown");
+        $("#map").addClass("mapSizeUp");
+
+        $("#mainSection").removeClass("fadeInPage");
+        $("#mainSection").addClass("fadeOutPage");
+
+        $("#cityList").removeClass("fadeInPage");
+        $("#cityList").addClass("fadeOutPage");
+
+        //pinSection Area
+        $("#pinSection1").removeClass("fadeOutPage");
+        $("#pinSection1").addClass("fadeInPage");
+        // --- pinSection end --
+
+        $("#pinSection").css("display", '')
+    }
+
     $('img').on('click', function(){
         if($(this).hasClass("pinImg")){
-            flag = 1
-            $("#map").removeClass("mapSizeUp");
-            $("#map").addClass("mapSizeDown");
-
-            $("#mainSection").removeClass("fadeOutPage");
-            $("#mainSection").addClass("fadeInPage");
-
-            $("#cityList").removeClass("fadeOutPage");
-            $("#cityList").addClass("fadeInPage");
-
-            //pinSection Area
-            $("#pinSection1").removeClass("fadeInPage");
-            $("#pinSection1").addClass("fadeOutPage");
-            // --- pinSection end --
-
-            $("#pinSection").css("display", 'none')
+            openIframe();
         }
         if($(this).hasClass("map") && flag === 1){
-            $("#map").removeClass("mapSizeDown");
-            $("#map").addClass("mapSizeUp");
-
-            $("#mainSection").removeClass("fadeInPage");
-            $("#mainSection").addClass("fadeOutPage");
-
-            $("#cityList").removeClass("fadeInPage");
-            $("#cityList").addClass("fadeOutPage");
-
-            //pinSection Area
-            $("#pinSection1").removeClass("fadeOutPage");
-            $("#pinSection1").addClass("fadeInPage");
-            // --- pinSection end --
-
-            $("#pinSection").css("display", '')
+            closeIframe();
         }
     })
 
@@ -98,4 +106,11 @@ $(document).ready(function(){
         document.getElementById("result").value = resultVal
     }
     
+    // 즐겨찾기
+    
+    $('li').on('click', function(){
+        if($(this).hasClass("city")){
+            console.log($(this));
+        }
+    })
 })
