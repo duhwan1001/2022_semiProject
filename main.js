@@ -13,8 +13,6 @@ $(document).ready(function(){
   
             $("#mainSection").css("display", 'none')
             $("#cityList").css("display", 'none')
-
-            $("#othercitylist").css("display", 'none')
         } else {
             $("#map").removeClass("mapSizeUp");
             $("#map").addClass("mapSizeDown");
@@ -27,8 +25,6 @@ $(document).ready(function(){
             
             $("#mainSection").css("display", '')
             $("#cityList").css("display", '')
-
-            $("#othercitylist").css("display",'')
         }   
     })
 
