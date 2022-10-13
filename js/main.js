@@ -1,19 +1,10 @@
 $(document).ready(function(){
 
-    $('#map').on('click', function(){
-        if($("#map").hasClass("mapSizeDown")){
-            $("#map").removeClass("mapSizeDown");
-            $("#map").addClass("mapSizeUp");
+    var flag = 0;
 
-            $("#mainSection").removeClass("fadeInPage");
-            $("#mainSection").addClass("fadeOutPage");
-
-            $("#cityList").removeClass("fadeInPage");
-            $("#cityList").addClass("fadeOutPage");
-  
-            $("#mainSection").css("display", 'none')
-            $("#cityList").css("display", 'none')
-        } else {
+    $('img').on('click', function(){
+        if($(this).hasClass("pinImg")){
+            flag = 1
             $("#map").removeClass("mapSizeUp");
             $("#map").addClass("mapSizeDown");
 
@@ -22,19 +13,37 @@ $(document).ready(function(){
 
             $("#cityList").removeClass("fadeOutPage");
             $("#cityList").addClass("fadeInPage");
-            
-            $("#mainSection").css("display", '')
-            $("#cityList").css("display", '')
-        }   
+
+            //pinSection Area
+            $("#pinSection1").removeClass("fadeInPage");
+            $("#pinSection1").addClass("fadeOutPage");
+            // --- pinSection end --
+
+            $("#pinSection").css("display", 'none')
+        }
+        if($(this).hasClass("map") && flag === 1){
+            $("#map").removeClass("mapSizeDown");
+            $("#map").addClass("mapSizeUp");
+
+            $("#mainSection").removeClass("fadeInPage");
+            $("#mainSection").addClass("fadeOutPage");
+
+            $("#cityList").removeClass("fadeInPage");
+            $("#cityList").addClass("fadeOutPage");
+
+            //pinSection Area
+            $("#pinSection1").removeClass("fadeOutPage");
+            $("#pinSection1").addClass("fadeInPage");
+            // --- pinSection end --
+
+            $("#pinSection").css("display", '')
+        }
     })
 
     // pinSections
-    $('#pinSection1').on('click', function(){
-        alert("서울!");
-        console.log($("#mainIframe").attr("src"));
+    $('#location1').on('click', function(){
+        alert("서울");
         $("#mainIframe").attr("src", "./citys/seoul.html");
-        console.log($("#mainIframe").attr("src"));
-
     })
     $('#pinSection2').on('click', function(){
         alert("서울!");
