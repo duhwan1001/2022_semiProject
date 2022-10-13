@@ -34,6 +34,7 @@ main img#map{
     border: 1px solid black;
     position: absolute; 
 
+    z-index: 300;
     width: 650px; /* 200 */
     height: 761px; /* 300 */
 
@@ -73,9 +74,10 @@ main img#map{
     height: 761px;
 
     position: absolute;
-    
+    opacity: 0%;
+
     margin-left: 275px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .mainUp {
@@ -109,6 +111,7 @@ main img#map{
     height : 430PX;
 
     background-color: yellow;
+    opacity: 0%;
 
     position: absolute;
     margin-left: 50px;
@@ -118,13 +121,13 @@ main img#map{
 .fadeInPage {
     animation-name: fadeIn;
     animation-duration: 3s;
-    /* animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 .fadeOutPage {
     animation-name: fadeOut;
-    animation-duration: 3s;
-    /* animation-fill-mode: forwards; */
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
@@ -150,6 +153,7 @@ main img#map{
     width: 50px;
     height: 50px;
     position: absolute;
+    cursor: pointer;
 }
 
 .pinText {
@@ -161,8 +165,8 @@ main img#map{
     z-index: 1000;
     margin-left: 400px;
     margin-top: 150px;
+
     position: absolute;
-    cursor: pointer;
 }
 
 /* ----- */
@@ -175,8 +179,6 @@ main aside {
     margin-right: 50px;
     float: right;
 }
-
-
 
 footer {
 	background: #C7C6FF;
@@ -290,3 +292,11 @@ footer h4 {
     margin-top: 7px;
     margin-left: 5px;
 }
+
+/* 김두환 */
+
+#mainIframe {
+    width: 700px;
+    height: 761px;
+}
+/* 김두환 끝 */
