@@ -23,23 +23,26 @@
         <h1>국내 여행지 찾기</h1>
     </header>
     <main>
+        <div id="pinSection">
+            <div id="pinSection1">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;서울</span><br><br>
+                <img class="pinImg" id="location1" src="../img/pin.png">
+            </div>
+        </div>
         <img id="map" class="" src="https://cdn.crowdpic.net/detail-thumb/thumb_d_EFF4AD990DA8372F912F4E08EBB3058D.jpg">
+        <div id="cityList" style="display: none;">
+            <ul>
+                <li>서울</li>
+                <li>대전</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div id="mainSection" style="display: none;">
-
-            <iframe>
+            <iframe id="mainIframe" src="./citys/iframeTest.html">
 
             </iframe>
-        </div>
-        <div id="othercitylist" style="display: none;">
-            <h2 id="othercity">다른 도시</h2>
-            <ul>
-                <li id="soeul" class="city">서울</li>
-                <li id="busan" class="city">부산</li>
-                <li id="gangneung" class="city">강릉</li>
-                <li id="jeju" class="city">제주도</li>
-                <li id="yeosu" class="city">여수</li>
-                <li id="jeonju" class="city">전주</li>
-            </ul>
         </div>
         
         <aside>
