@@ -22,13 +22,45 @@
 </head>
 <body>
     <header>
-        <h1>국내 여행지 찾기</h1>
+        <h1 id="mainTitle">국내 여행지 추천 목록</h1>
     </header>
     <main>
         <div id="pinSection">
             <div id="pinSection1">
                 <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;서울</span><br><br>
-                <img class="pinImg" id="location1" src="../img/pin.png">
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection2">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;부산</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection3">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;인천</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection4">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;대구</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection5">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;대전</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection6">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;광주</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection7">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;울산</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection8">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;제주</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
+            </div>
+            <div id="pinSection9">
+                <span class="pinText">&nbsp;&nbsp;&nbsp;&nbsp;독도</span><br><br>
+                <img class="pinImg" id="location1" src="./img/pin.png">
             </div>
         </div>
         
@@ -47,7 +79,7 @@
             </ul> -->
         </div>
         <div id="mainSection">
-            <iframe id="mainIframe" src="./citys/index.html">
+            <iframe id="mainIframe" src="">
 
             </iframe>
         </div>
@@ -56,9 +88,7 @@
             <div id="rightUp" class="rightbox">
                 <h2 id="bookmark" class="subject">즐겨찾기</h2>
                 <ul id="cities">
-                    <li id="Seoul" value="./citys/seoul.html" class="city"><a>서울</a><i class="fa fa-trash" aria-hidden="true"></i></li>
-                    <li class="city">부산</li>
-                    <li class="city">제주도</li>
+                    <li class="city">부산<i style='cursor : pointer' id='deleteBookmark' class='fa fa-trash' aria-hidden='true'></i></li>
                 </ul>
             </div>
 
