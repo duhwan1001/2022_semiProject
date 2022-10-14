@@ -90,7 +90,14 @@ $(document).ready(function(){
             closeIframe();
         }
     })
-
+    $('img').on('click', function(){
+        if($(this).hasClass("pinImg4")){
+            openIframe();
+        }
+        if($(this).hasClass("map") && flag === 1){
+            closeIframe();
+        }
+    })
     // pinSections
     $('#location1').on('click', function(){
         alert("서울");
@@ -107,6 +114,10 @@ $(document).ready(function(){
     $('#pinSection4').on('click', function(){
         alert("대전!");
         $("#mainIframe").attr("src", "./citys/daejeon.html");
+    })
+    $('#pinSection5').on('click', function(){
+        alert("광주!");
+        $("#mainIframe").attr("src", "./citys/gwangju.html");
     })
 
 
