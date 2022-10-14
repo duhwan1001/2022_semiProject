@@ -1,24 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>제목</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    <!-- JQuery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- Reset css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="../css/mainIframe.css">
-    <!-- main js -->
-    <script type="text/javascript" src="../js/mainIframe.js"></script>
-</head>
-<body>
-    <section id="mainSection">
-        ㅁㄴㅇㅁㄴㅇㅁ
-    </section>
-</body>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/mainIframe.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/mainIframe.js"></script>
+    </head>
+    <body>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div id="bookMark" class="badge bg-dark text-white position-absolute" style="cursor: pointer; top: 0.5rem; right: 0.5rem">즐겨찾기</div>
+                <form>
+                    <input type="hidden" name="link" value="./citys/gwangju.html">
+                    <input type="hidden" name="cityNameKr" value="광주">
+                    <input type="hidden" name="cityNameEn" value="Gwangju">
+                </form>
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">광주</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">전라남도 중북부에 있는 광역자치단체. 호남 최대도시이며 광주권의 수부도시이다. 광주학생항일운동의 도화선이었고, 4.19 혁명, 5.18 민주화운동, 6.10 민주 항쟁이 일어나는 등 한국 근현대사에 굵은 획을 남긴 도시이며 이 때문에 아시아인권위원회와 아시아법률자원센터가 홍콩에 있다가 이곳으로 이전했다. 세계인권도시포럼 또한 광주에서 열렸다.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/gwangju/gwangju.jpg" alt="펭귄마을" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">펭귄마을</h5>
+                                    <!-- 장소 설명 -->
+                                    양림동 주민 센터 뒤에 펭귄모양의 이정표를 따라 좁은 골목길을 들어가면 70,80년대 마을이 전시장으로 변모하고 있다. 무릎이 불편한 어르신이 뒤뚱뒤뚱 걷는 모습이 펭귄 같다고 하여 이름 지어진 마을이다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/gwangju/청춘발산마을.jpg" alt="청춘발산마을" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">청춘발산마을</h5>
+                                    <!-- 장소 설명 -->
+                                    '청춘발산마을'은 광주에 남아있는 달동네의 벽화와 희망적인 문구로 재탄생햇다. 과거 방직공장에서 일하던 사람들이 모여 살던 가난한 동네였고, 양학선 선수가 자란곳으로도 유명하다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/seoul/namsanTower.jpg" alt="남산타워" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">남산 타워</h5>
+                                    <!-- 장소 설명 -->
+                                    ‘남산서울타워’는 효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파 탑으로 방송문화와 관광산업의 미래를 위해 건립되었습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/seoul/namsanTower.jpg" alt="남산타워" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">남산 타워</h5>
+                                    <!-- 장소 설명 -->
+                                    ‘남산서울타워’는 효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파 탑으로 방송문화와 관광산업의 미래를 위해 건립되었습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
