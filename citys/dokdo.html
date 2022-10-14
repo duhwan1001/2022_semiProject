@@ -17,8 +17,60 @@
     <script type="text/javascript" src="../js/mainIframe.js"></script>
 </head>
 <body>
-    <section id="mainSection">
-        ㅁㄴㅇㅁㄴㅇㅁ
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div id="bookMark" class="badge bg-dark text-white position-absolute" style="cursor: pointer; top: 0.5rem; right: 0.5rem">즐겨찾기</div>
+            <form>
+                <input type="hidden" name="link" value="./citys/seoul.html">
+                <input type="hidden" name="cityNameKr" value="독도">
+                <input type="hidden" name="cityNameEn" value="Dokdo">
+            </form>
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">독도</h1>
+                <p class="lead fw-normal text-white-50 mb-0">460만 년 전 태고의 신비를 간직한 땅</p>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- 추천 뱃지 -->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                        <!-- 장소 이미지 -->
+                        <img id="placeImages" class="card-img-top" src="../img/dokdo/독도등대.jpg" alt="독도등대" />
+                        <!-- 장소 디테일 -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- 장소 이름 -->
+                                <h5 class="fw-bolder">독도 등대</h5>
+                                <!-- 장소 설명 -->
+                                '우리나라 최동단의 화산바위섬에 세워진 등대이며 등대원이 상주근무하여 국토지킴이 역할과 선박안전에 기여하고 있다.'
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- 장소 이미지 -->
+                        <img id="placeImages" class="card-img-top" src="../img/dokdo/독립문바위.jpg" alt="독립문바위" />
+                        <!-- 장소 디테일 -->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- 장소 이름 -->
+                                <h5 class="fw-bolder">독립문바위</h5>
+                                <!-- 장소 설명 -->
+                                '형태가 마치 독립문을 닮아 독립문바위라 하며 수평츨리 및 수직절리가 매우 발달한 응회암이다'
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
     </section>
 </body>
 </html>
