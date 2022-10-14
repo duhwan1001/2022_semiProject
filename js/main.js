@@ -122,7 +122,7 @@ $(document).ready(function(){
 
     
         var resultVal = (afterDate.getTime() - nowDate.getTime())/(1000 * 60 * 60 * 24);
-        document.getElementById("result").value = resultVal
+        document.getElementById("result").value = resultVal + "일"
     }
     
     // 즐겨찾기 삭제 기능인데 미구현  

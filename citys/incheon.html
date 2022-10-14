@@ -1,24 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>제목</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    <!-- JQuery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- Reset css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="../css/mainIframe.css">
-    <!-- main js -->
-    <script type="text/javascript" src="../js/mainIframe.js"></script>
-</head>
-<body>
-    <section id="mainSection">
-        ㅁㄴㅇㅁㄴㅇㅁ
-    </section>
-</body>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/mainIframe.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/mainIframe.js"></script>
+    </head>
+    <body>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div id="bookMark" class="badge bg-dark text-white position-absolute" style="cursor: pointer; top: 0.5rem; right: 0.5rem">즐겨찾기</div>
+                <form>
+                    <input type="hidden" name="link" value="./citys/incheon.html">
+                    <input type="hidden" name="cityNameKr" value="인천">
+                    <input type="hidden" name="cityNameEn" value="incheon">
+                </form>
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">인천</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">첨단산업도시 인천</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/incheon/eulwangSea.png" alt="을왕리 해수욕장" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                     <!-- 장소 이름 -->
+                                     <h5 class="fw-bolder">을왕리 해수욕장</h5>
+                                     <!-- 장소 설명 -->
+                                     인천 중구 을왕동에 위치한 해수욕장으로 늘목, 얼항 등으로 불리며 1986년 국민관광지로 지정되었습니다. 백사장의 길이는 약 700m이고 평균 수심은 1.5m로 비교적 큽니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/incheon/incheonPark.png" alt="인천대공원" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">인천 대공원</h5>
+                                    <!-- 장소 설명 -->
+                                    그것은 관모산(162m)에 걸쳐 있고 소래산 줄기의 상아산, 거마산과 접해 있습니다. 관모산은 산의 모양이 관과 같다고 하여 거마산이 말이 서 있는 모양을 닮았다고 하여 붙여진 이름입니다. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/incheon/wallmeIsland.png" alt="월미도" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">월미도</h5>
+                                    <!-- 장소 설명 -->
+                                    섬의 외관이 반달 꼬리처럼 휘어져 있다는 데서 지명이 유래했습니다. 1900년대 초반까지 부천시 영종면에 속했다가 1914년 9월 1일 인천부에 편입되었습니다. 원래 인천역에서 서쪽으로 1㎞ 떨어진 면적 0.66㎢의 섬이었으나 1920년대 초반 돌제방이 쌓이면서 내륙으로 연결되면서 세관 검역소, 측초소, 무선 전신국 등 각종 기관이 들어섰습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- 추천 뱃지 -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">추천!</div>
+                            <!-- 장소 이미지 -->
+                            <img id="placeImages" class="card-img-top" src="../img/incheon/cafeOra.png" alt="카페 오라" />
+                            <!-- 장소 디테일 -->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- 장소 이름 -->
+                                    <h5 class="fw-bolder">카페 오라</h5>
+                                    <!-- 장소 설명 -->
+                                    을왕리 바다가 한눈에 내려다보이는 탁 트인 전망이 인상적인 카페입니다. 2009년 한국건축문화대상을 받은 700평 규모의 모던한 건물도 인상적인 곳이지요. 커피와 베이커리 등 디저트 메뉴 외에 파스타와 식사도 즐길 수 있어 좋습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
