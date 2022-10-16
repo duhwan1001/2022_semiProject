@@ -35,7 +35,7 @@ main {
 
 
 main img#map{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute; 
 
     z-index: 300;
@@ -113,13 +113,14 @@ main img#map{
 #cityList {
     width : 200px;
     height : 430PX;
-
-    background-color: yellow;
+    text-align: center;
+    font-size: 23px;
     opacity: 0%;
-
+    font-weight: bold;
     position: absolute;
     margin-left: 50px;
     margin-top: 330px;
+    cursor: pointer;
 }
 
 .fadeInPage {
@@ -231,7 +232,7 @@ main img#map{
 /* ----- */
 
 main aside {
-	border: 1px solid #333;
+	/* border: 1px solid #333; */
 
     width: 250px;
     height: 761px;
@@ -269,12 +270,12 @@ footer h4 {
 
 /* 우측 박스 */
 .rightbox{
-    background: gray;
+    background: #e7e2e2;
 }
 #rightUp{
     width: 250px;
     height: 300px;
-    background: whitesmoke;
+    background: e7e2e2;
 }
 
 .slideshow-container {
@@ -285,7 +286,7 @@ footer h4 {
   
   /* Caption text */
   .text {
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 8px 12px;
@@ -293,9 +294,10 @@ footer h4 {
     bottom: 8px;
     width: 225px;
     text-align: center;
+    text-shadow: black 1px 0 15px;
   }
   .span{
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
   }
   
   /* Number text (1/3 etc) */

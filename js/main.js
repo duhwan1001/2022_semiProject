@@ -79,6 +79,37 @@ $(document).ready(function(){
         $("#mainIframe").attr("src", "./citys/dokdo.html");
     })
 
+    // cityLIst Sections
+    $('#city1').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/seoul.html");
+    })
+    $('#city2').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/busan.html");
+    })
+    $('#city3').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/incheon.html");
+    })
+    $('#city4').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/daegu.html");
+    })
+    $('#city5').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/daejeon.html");
+    })
+    $('#city6').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/gwangju.html");
+    })
+    $('#city7').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/ulsan.html");
+    })
+    $('#city8').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/jeju.html");
+    })
+    $('#city9').on('click', function(){
+        $("#mainIframe").attr("src", "./citys/dokdo.html");
+    })
+
+  
+
     let slideIndex = 0;
 
     function showSlides() {
